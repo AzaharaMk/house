@@ -64,6 +64,8 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         
+       
+        
         
     
         
@@ -81,6 +83,7 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            suelo.changeColor("black");
         }
     }
 
@@ -95,11 +98,13 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+            suelo.changeColor("black");
         }
     }
     
     public void moveSun()
     {
         sun.slowMoveVertical(90);
+         setBlackAndWhite();
     }
 }
